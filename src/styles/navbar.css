@@ -1,0 +1,35 @@
+.navbar {
+  top: 0;
+  z-index: 1;
+  position: sticky;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 6em;
+  padding: 0 2em;
+  border: var(--border-regular);
+  background: var(--color-white);
+}
+
+.navbar .logo {
+  font-size: 2.25em;
+  font-weight: var(--font-bold);
+}
+
+.navbar .logo span {
+  color: var(--color-blue-regular);
+}
+
+.navbar .toggle {
+  font-size: 1.25em;
+  font-weight: var(--font-bold);
+
+  text-transform: uppercase;
+}
+
+.navbar .toggle:hover {
+  color: var(--color-blue-regular);
+  transition: 0.2s ease all;
+}

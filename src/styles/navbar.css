@@ -18,10 +18,6 @@
   font-weight: var(--font-bold);
 }
 
-.navbar .logo span {
-  color: var(--color-blue-regular);
-}
-
 .navbar .toggle {
   font-size: 1.25em;
   font-weight: var(--font-bold);

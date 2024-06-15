@@ -38,3 +38,42 @@ body {
   max-width: 1854px;
   background: white;
 }
+
+/* REUSED STYLE RULES */
+
+.bg-blue-light {
+  background: var(--color-blue-light);
+}
+
+.bg-blue-regular {
+  background: var(--color-blue-regular);
+}
+
+.bg-blue-dark {
+  background: var(--color-blue-dark);
+}
+
+.color-blue-light {
+  color: var(--color-blue-light);
+}
+
+.color-blue-regular {
+  color: var(--color-blue-regular);
+}
+
+.color-blue-dark {
+  color: var(--color-blue-dark);
+}
+
+/* BUTTON THEME */
+/* NOTE: combine with bg-*-dark classes for dark button styling */
+.button {
+  padding: 0.5em;
+  border: var(--border-thin);
+
+  color: black;
+  text-transform: capitalize;
+
+  font-size: 1.25em; /* update to use a font-size from the set of defined sizes */
+  font-weight: var(--font-bold);
+}

@@ -1,0 +1,121 @@
+.hero {
+  display: flex;
+
+  /* NOTE: consider extracting into a .section class rule */
+  border: var(--border-regular);
+  border-top: 0;
+  height: calc(100vh - 6em);
+}
+
+/* RIGHT SECTION OF HERO SECTION */
+/*---------------------------------------------------------------------------*/
+
+.hero .right {
+  flex-basis: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 2em;
+  padding-right: 20%;
+  position: relative;
+
+  background: var(--color-base);
+  border-right: var(--border-regular);
+}
+
+.hero .right img {
+  top: 0;
+  right: 0;
+  width: 30em;
+  aspect-ratio: 1;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* TODO: make .main-heading, .sub-heading and .text page wide rules */
+/* TODO: consolidatie font-sizes into a defined set of font-sizes in base.css*/
+.hero .right .main-heading {
+  font-size: 3.75em;
+}
+
+.hero .right .sub-heading {
+  font-size: 1.5em;
+}
+
+.hero .right .text {
+  font-size: 1.5em;
+  margin: 0.5em 0 1em;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* LEFT SECTION OF HERO SECTION  */
+/*---------------------------------------------------------------------------*/
+
+.hero .left {
+  flex-basis: 30%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.hero .left .item {
+  padding: 2em;
+  cursor: pointer;
+  transition: all 0.333s ease;
+  background: var(--bg-default);
+  border-bottom: var(--border-regular);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero .left .item:last-child {
+  border-bottom: 0;
+}
+
+.hero .left .item .main-heading {
+  font-size: 2.75em;
+}
+
+/**
+ * NOTE:
+ * background set to --bg-default (see `.hero .left .item` rule)
+ * :hover used to change background to --bg-hover (see `.hero .left .item:hover)
+ * the item need only set the desired default and hover bg
+ * switching between these on hover is "automatically" handled
+ */
+.hero .left .item-1 {
+  --bg-hover: var(--color-blue-dark);
+  --bg-default: var(--color-blue-light);
+}
+
+.hero .left .item-2 {
+  --bg-hover: var(--color-pink-dark);
+  --bg-default: var(--color-pink-light);
+}
+
+.hero .left .item-3 {
+  --bg-hover: var(--color-orange-dark);
+  --bg-default: var(--color-orange-light);
+}
+
+/* MOUSE OVER STYLINGS */
+.hero .left .item:hover {
+  background: var(--bg-hover);
+}
+
+.hero .left .item:hover .main-heading,
+.hero .left .item:hover .button {
+  color: var(--color-white);
+}
+
+.hero .left .item:hover .button {
+  gap: 0.75em;
+  margin-left: 0.25em;
+  fill: var(--color-white);
+}
+
+/*---------------------------------------------------------------------------*/

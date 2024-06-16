@@ -170,3 +170,25 @@ body {
 }
 
 /*---------------------------------------------------------------------------*/
+
+/* TYPOGRAHY */
+/*---------------------------------------------------------------------------*/
+
+/* NOTE: ideally calling code only varies the font-size in most cases */
+.text {
+  color: var(--color-text);
+  font-weight: var(--font-regular);
+}
+
+.main-heading {
+  line-height: 1;
+  color: var(--color-black);
+  font-weight: var(--font-bold);
+}
+
+.sub-heading {
+  text-transform: capitalize;
+  font-weight: var(--font-bold);
+}
+
+/*---------------------------------------------------------------------------*/

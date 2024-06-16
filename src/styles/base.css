@@ -6,12 +6,21 @@
   --color-white: white;
   --color-black: black;
 
+  --color-text: #4c4f69;
   --color-base: #eff1f5;
   --color-surface: #ccd0da;
 
   --color-blue-light: #c0e8f9;
   --color-blue-regular: #04a5e5;
   --color-blue-dark: #035e81;
+
+  --color-pink-light: #eabecd;
+  --color-pink-regular: #cc6186;
+  --color-pink-dark: #872c4b;
+
+  --color-orange-light: #f6b78e;
+  --color-orange-regular: #ee7b30;
+  --color-orange-dark: #e26d12;
   /*---------------------------------------------------------------------------*/
 
   /* BORDER THEME */
@@ -40,6 +49,8 @@ body {
 }
 
 /* REUSED STYLE RULES */
+/* COLOR SCHEME BACKGROUNDS */
+/*---------------------------------------------------------------------------*/
 
 .bg-blue-light {
   background: var(--color-blue-light);
@@ -53,6 +64,35 @@ body {
   background: var(--color-blue-dark);
 }
 
+.bg-pink-light {
+  background: var(--color-pink-light);
+}
+
+.bg-pink-regular {
+  background: var(--color-pink-regular);
+}
+
+.bg-pink-dark {
+  background: var(--color-pink-dark);
+}
+
+.bg-orange-light {
+  background: var(--color-orange-light);
+}
+
+.bg-orange-regular {
+  background: var(--color-orange-regular);
+}
+
+.bg-orange-dark {
+  background: var(--color-orange-dark);
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* COLOR SCHEME FONT COLORS  */
+/*---------------------------------------------------------------------------*/
+
 .color-blue-light {
   color: var(--color-blue-light);
 }
@@ -64,6 +104,32 @@ body {
 .color-blue-dark {
   color: var(--color-blue-dark);
 }
+
+.color-pink-light {
+  color: var(--color-pink-light);
+}
+
+.color-pink-regular {
+  color: var(--color-pink-regular);
+}
+
+.color-pink-dark {
+  color: var(--color-pink-dark);
+}
+
+.color-orange-light {
+  color: var(--color-orange-light);
+}
+
+.color-orange-regular {
+  color: var(--color-orange-regular);
+}
+
+.color-orange-dark {
+  color: var(--color-orange-dark);
+}
+
+/*---------------------------------------------------------------------------*/
 
 /* BUTTON THEME */
 /* NOTE: combine with bg-*-dark classes for dark button styling */

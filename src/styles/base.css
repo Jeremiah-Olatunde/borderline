@@ -132,8 +132,10 @@ body {
 /*---------------------------------------------------------------------------*/
 
 /* BUTTON THEME */
+/*---------------------------------------------------------------------------*/
+
 /* NOTE: combine with bg-*-dark classes for dark button styling */
-.button {
+.primary-button {
   padding: 0.5em;
   border: var(--border-thin);
 
@@ -142,4 +144,29 @@ body {
 
   font-size: 1.25em; /* update to use a font-size from the set of defined sizes */
   font-weight: var(--font-bold);
+  transition: all 0.333s ease;
 }
+
+.secondary-button {
+  gap: 0.5em;
+  display: flex;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.333s ease;
+  line-height: 1;
+}
+
+.secondary-button .icon {
+  /**
+ * NOTE:
+ * font-size of parent button is 1em (default)
+ * line-height set to 1 (therefore = 1em)
+ * height 1em matches icon height to line-height. perfectly centering icon.
+ * 
+ * "calling code" may change button size solely by increasing font-size
+ * this set up scales the icon and the text perfectly
+ * */
+  height: 1em;
+}
+
+/*---------------------------------------------------------------------------*/
